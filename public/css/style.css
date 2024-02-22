@@ -262,7 +262,7 @@ main{
     margin-top: 100px;
 }
 
-.point{
+.points a{
     width: 8px;
     height: 8px;
     background-color: #aaa;
@@ -271,13 +271,13 @@ main{
     cursor: pointer;
 }
 
-.active-point{
-    background-color: white;
+.activePoint{
+    background-color: white !important
 }
 
 .crew-image img{
-    width: 21vw;
-    margin-top: -75px;
+    width: 270px;
+    margin-top: -90px;
     margin-left: 80px;
 }
 
@@ -299,8 +299,18 @@ main{
     cursor: pointer;
 }
 
+
 .active-number{
     background-color: white;
+    color: black;
+}
+.number a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.active-number a{
     color: black;
 }
 
@@ -330,6 +340,355 @@ main{
     position: fixed;
     right: 0;
 }
+
+@media screen and (min-width: 1920px) {
+    .info{
+        max-width: 467px;
+    }
+    .subtitle{
+        font-size: 33px;
+    }
+    .title{
+       font-size: 130px; 
+    }
+
+    .text{
+        font-size: 20px;
+        margin-top: 40px;
+        line-height: 30px;
+    }
+    .explore-sec{
+        margin-left: 700px;
+        margin-top: 160px;
+    }
+
+    .explore{
+        width: 280px;
+        height: 280px;
+        font-size: 28px;
+    }
+
+    .info-planets .infos p{
+        max-width: 49vw;
+        font-size: 16px;
+    }
+
+    .crew-info{
+        margin-left: 60px;
+    }
+
+    .pattent{
+        font-size: 26px;
+    }
+
+    .name{
+        font-size: 42px;
+    }
+
+    .bio{
+        line-height: 25px;
+        margin-top: 40px;
+    }
+
+    .points{
+        margin-top: 350px;
+    }
+
+    .points a{
+        margin-right: 20px;
+    }
+
+    .crew-image img{
+        width: 400px;
+        margin-top: 30px;
+        margin-left: 250px;
+    }
+
+    .number{
+        margin-bottom: 25px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .description{
+        margin-top: 15px;
+        line-height: 25px;
+    }
+
+    .launcher-image img{
+        height: inherit;
+    }
+
+}
+
+@media screen and (min-width : 900px) and (max-width : 1024px) {
+    header nav{
+        margin-left: -50px;
+        width: 82vw;
+    }
+
+    .explore-sec{
+        margin-left: 200px;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .line-header{
+        width: 20vw;
+        margin-left: 30px;
+        margin-right: 70px;
+    }
+    header nav{
+        margin-left: -100px;
+        width: 70vw;
+    }
+
+    header nav ul li{
+        margin-left: 40px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    .info{
+        margin-left: 80px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .explore-sec {
+        margin-left: 40px;
+        margin-top: 200px;
+    }
+
+    .explore{
+        width: 180px;
+        height: 180px;
+        font-size: 22px;
+    }
+
+    
+    .info-planets .infos p {
+        font-size: 12px;
+        max-width: 44vw;
+    }
+    
+    .avg-dstance, .travel{
+        font-size: 13px;
+    }
+    
+    .stastisc .travel-info {
+        margin-left: 12vw;
+    }
+    
+    .distance, .travel-time {
+        font-size: 22px;
+    }
+    
+    .info-launchers{
+        margin-left: 15vw;
+    }
+    
+    .description{
+        max-width: 38vw;
+    }
+    .launcher-title{
+        font-size: 30px;
+    }
+    
+    .meet-crew, .space-launch, .pick-destin{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .line-header{
+       display: none;
+
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .info{
+        margin-left: 0px;
+        text-align: center;
+        max-width: 98vw;
+    }
+
+    .subtitle{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .title{
+        font-size: 90px;
+        letter-spacing: 0px;
+        margin-top: 40px;
+    }
+
+    .text{
+        font-size: 9px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .explore-sec {
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+
+    .explore {
+        width: 170px;
+        height: 170px;
+        font-size: 15px;
+    }
+
+    .pick-destin{
+        font-size: 16px;
+    }
+
+    .images-planets img{
+        width: 45vw;
+        margin-left: 0px;
+        margin-top: -30px;
+    }
+
+    .info-planets {
+        margin-left: 0vw;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .select-planets ul{
+        margin-left: 50px;
+    }
+
+    .select-planets ul li {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .info-planets .infos p {
+        font-size: 13px;
+        max-width: 90vw;
+    }
+
+    .stastisc {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stastisc .travel-info {
+        margin-left: 0vw;
+        margin-top: 20px;
+    }
+
+    .meet-crew{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .crew-image{
+        position: absolute;
+    }
+
+    .crew-image img{
+        position: absolute;
+        margin: 0px;
+        width: 180px;
+        height: 250px;
+        margin-top: -70px;
+        margin-left: -80px;
+    }
+    .points{
+        margin-top: -150px;
+        position: absolute;
+        margin-left: 155px;
+    }
+
+    .crew-info{
+        position: absolute;
+        margin-top: 600px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .pattent{
+        font-size: 16px;
+    }
+
+    .name{
+        font-size: 25px;
+    }
+
+    .bio{
+        max-width: 95vw;
+        font-size: 12px;
+    }
+
+    .launcher-image img{
+        width: 100vw;
+        height: 230px;
+        margin-top: -50px;
+    }
+
+    .space-launch{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .numbers{
+        position: absolute;
+        margin-left: 0px;
+        display: flex;
+        margin-top: 440px;
+    }
+
+    .number{
+        margin-right: 20px;
+    }
+
+    .info-launchers{
+        margin-left: 0px;
+        margin-top: 620px;
+        position: absolute;
+        text-align: center;
+
+    }
+
+    .description {
+        max-width: 95vw;
+        font-size: 11px;
+    }
+
+    .launcher-subtitle {
+        font-size: 14px;
+    }
+
+    .launcher-title {
+        font-size: 25px;
+    }
+
+
+
+
+
+}
+
+
 
 
 

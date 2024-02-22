@@ -1,38 +1,44 @@
 import { Request,Response } from "express";
 import  {planet} from '../helpers/ActiveDestin'
-import { selectPlanet } from "../models/DestinationModel";
+import { dataPlanet } from "../models/DestinationModel";
+import { background } from "../helpers/ActiveMenu";
 
 
 
-export const moon = (req: Request, res:Response) =>{
-    let destin = planet('moon')
-    res.render('pages/destination',{
-       destin : planet('moon'),
-    })
-}
-
-export const mars = (req: Request, res:Response) =>{
-    let destin = planet('mars')
-
-    res.render('pages/destination',{
-        destin : planet('mars')
-    })
-}
-
-export const europa = (req: Request, res:Response) =>{
-    let destin = planet('europa')
-
-    res.render('pages/destination',{
-        destin : planet('europa')
-    })
-}
-
-export const titan = (req: Request, res:Response) =>{
-    let destin = planet('titan')
-    if(destin){
-        console.log('ola')
+export const destinations = (req: Request, res:Response) =>{
+    let param = req.params.destinations
+    
+    const returnPlanet = () =>{
+        if(param == ':moon'){
+            return dataPlanet[0]
+        }else if(param == ':mars'){
+            return dataPlanet[1]
+        }else if(param == ':europa'){
+            return dataPlanet[2]
+        }else if(param == ':titan'){
+            return dataPlanet[3]
+        }
     }
+
+    
+    const activePlanet = () =>{
+        if(param == ':moon'){
+            return planet(':moon')
+        }else if(param == ':mars'){
+            return planet(':mars')
+        }else if(param == ':europa'){
+            return planet(':europa')
+        }else if(param == ':titan'){
+            return planet(':titan')
+        }
+    }
+
+   
+
+    
     res.render('pages/destination',{
-        destin: planet('titan')
+        planets : returnPlanet(),
+        active : activePlanet(),
+        background : background('/destination:')
     })
 }
