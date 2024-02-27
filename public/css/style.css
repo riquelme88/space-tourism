@@ -53,6 +53,9 @@ header{
     opacity: 0.6;
 }
 
+.close{
+    display: none;
+}
 header nav{
     background: linear-gradient(to right, #20242e,transparent,transparent,transparent,transparent);
     backdrop-filter: blur(5px);
@@ -341,6 +344,7 @@ main{
     right: 0;
 }
 
+
 @media screen and (min-width: 1920px) {
     .info{
         max-width: 467px;
@@ -515,6 +519,80 @@ main{
 
     }
 
+    .home{
+        overflow: hidden;
+    }
+
+    header nav{
+        width: 50vw;
+        position: absolute;
+        margin-top: 200px;
+        backdrop-filter: blur(15px);
+        background: none;
+        margin-top: 90vh;
+        height: 100vh;
+        transition: all ease 0.5s;
+        z-index: 99;
+        margin-left: 100vw;
+        flex-direction: column;
+        display: none;
+    }
+
+    .close{
+        display: block;
+        right: 0;
+        cursor: pointer;
+        margin-right: 15%;
+    }
+
+    .open{
+        width: 32px;
+        height: 0px;
+        justify-content: center;
+        background-color: red;
+        align-items: center;
+        right: 0;
+        position: fixed;
+        margin-right: 15px;
+    }
+
+    .open .line{
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        margin-top: 6px;
+
+    }
+
+    
+    .close img{
+        width: 30px;
+        margin-left: 100%;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-right: 50%;
+        width: 80%;
+    }
+    
+    header nav ul li{
+        padding: 0px 0px;
+        margin-right: -24%;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .active{
+        border: 0px;
+        border-right: 3px solid white;
+    }
+    nav ul li a span{
+        margin-left: 10px;
+    }
+
     main{
         flex-direction: column;
         align-items: center;
@@ -643,6 +721,7 @@ main{
         width: 100vw;
         height: 230px;
         margin-top: -50px;
+        position: absolute;
     }
 
     .space-launch{
