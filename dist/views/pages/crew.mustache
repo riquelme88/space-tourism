@@ -1,0 +1,11 @@
+{{>partials/header}}
+
+<h1 class="meet-crew">02<span>Meet you crew</span></h1>
+    {{#allCrews}}
+        {{>partials/crews}}
+    {{/allCrews}}
+
+    {{#crewDefault}}
+        {{>partials/crews}}
+    {{/crewDefault}}
+{{>partials/footer}}
