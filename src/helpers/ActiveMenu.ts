@@ -1,30 +1,30 @@
 type MenuOptions = '' | 'home' | 'destination' | 'crew' | 'technology'
 type BackgroundType = '' | '/:' | '/destination:' | '/crew:' | '/technology:'
 
-export const Active = (ActiveMenu : MenuOptions) => {
-    let returnObject ={
-        home : false,
-        destination : false,
-        crew : false, 
-        technology : false
+export const Active = (ActiveMenu: MenuOptions) => {
+    let returnObject = {
+        home: false,
+        destination: false,
+        crew: false,
+        technology: false
     };
 
-    if(ActiveMenu != ''){
+    if (ActiveMenu != '') {
         returnObject[ActiveMenu] = true;
     }
 
     return returnObject
 }
 
-export const background = (activeBackground : BackgroundType) =>{
+export const background = (activeBackground: BackgroundType) => {
     let returnObject = {
-        '/:' : false,
-        '/destination:' : false,
-        '/crew:' : false,
-        '/technology:' : false
+        '/:': false,
+        '/destination:': false,
+        '/crew:': false,
+        '/technology:': false
     }
 
-    if(activeBackground != ''){
+    if (activeBackground != '') {
         returnObject[activeBackground] = true
     }
 

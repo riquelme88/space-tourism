@@ -1,28 +1,28 @@
 import { Request, Response } from "express";
-import {dataTechnology} from '../models/TechnologyModel'
+import { dataTechnology } from '../models/TechnologyModel'
 import { technologyActive } from "../helpers/ActiveTechnology";
 import { background } from "../helpers/ActiveMenu";
 
 
-export const technologyController = (req: Request, res : Response) =>{
+export const technologyController = (req: Request, res: Response) => {
     let params = req.params.technologys
-    
-    const returnTechnology = () =>{
-        if(params == ':Launchvehicle'){
+
+    const returnTechnology = () => {
+        if (params == ':Launchvehicle') {
             return dataTechnology[0]
-        }else if(params == ':Spaceport'){
+        } else if (params == ':Spaceport') {
             return dataTechnology[1]
-        }else if(params == ':Spacecapsule'){
+        } else if (params == ':Spacecapsule') {
             return dataTechnology[2]
         }
     }
 
-    const returnActive = () =>{
-        if(params == ':Launchvehicle'){
+    const returnActive = () => {
+        if (params == ':Launchvehicle') {
             return technologyActive('Launchvehicle')
-        }else if(params == ':Spaceport'){
+        } else if (params == ':Spaceport') {
             return technologyActive('Spaceport')
-        }else if(params == ':Spacecapsule'){
+        } else if (params == ':Spacecapsule') {
             return technologyActive('Spacecapsule')
         }
     }
@@ -30,8 +30,8 @@ export const technologyController = (req: Request, res : Response) =>{
 
 
     res.render('pages/technology', {
-        techModel : returnTechnology(),
-        active : returnActive(),
-        background : background('/technology:')
+        techModel: returnTechnology(),
+        active: returnActive(),
+        background: background('/technology:')
     })
 }

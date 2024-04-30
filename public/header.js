@@ -2,19 +2,18 @@ let closeNav = document.querySelector('.close')
 let openNav = document.querySelector('.open')
 let nav = document.querySelector('nav')
 
-closeNav.addEventListener('click', ()=>{
+closeNav.addEventListener('click', () => {
     openNav.style.display = 'block'
     nav.style.marginLeft = '100vw'
-    setTimeout(()=>{
+    setTimeout(() => {
         nav.style.display = 'none'
-    },300)
+    }, 300)
 })
 
-openNav.addEventListener('click', ()=>{
+openNav.addEventListener('click', () => {
     openNav.style.display = 'none'
     nav.style.display = 'block'
-    setTimeout(()=>{
+    setTimeout(() => {
         nav.style.marginLeft = '50vw'
-    },300)
+    }, 300)
 })
-

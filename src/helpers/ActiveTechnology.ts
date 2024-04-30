@@ -2,14 +2,14 @@ type typeTechnology = '' | 'Launchvehicle' | 'Spaceport' | 'Spacecapsule'
 
 
 
-export const technologyActive = (activeTechnology : typeTechnology) =>{
+export const technologyActive = (activeTechnology: typeTechnology) => {
     let returnObject = {
-        'Launchvehicle' : false,
+        'Launchvehicle': false,
         'Spaceport': false,
         'Spacecapsule': false
     }
 
-    if(activeTechnology != ''){
+    if (activeTechnology != '') {
         returnObject[activeTechnology] = true
     }
 

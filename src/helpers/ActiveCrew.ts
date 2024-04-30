@@ -1,16 +1,16 @@
-type CrewType = '' | ':Douglas' | ':Mark'| ':Victor' | ':Anousheh'
+type CrewType = '' | ':Douglas' | ':Mark' | ':Victor' | ':Anousheh'
 
 
-export const crewActives = (ActiveCrew : CrewType)=>{
+export const crewActives = (ActiveCrew: CrewType) => {
     let returnObject = {
-        ':Douglas' : false,
-        ':Mark' : false,
-        ':Victor' : false,
-        ':Anousheh' : false,
+        ':Douglas': false,
+        ':Mark': false,
+        ':Victor': false,
+        ':Anousheh': false,
     }
 
-    if(ActiveCrew != ''){
-         returnObject[ActiveCrew] = true
+    if (ActiveCrew != '') {
+        returnObject[ActiveCrew] = true
     }
 
     return returnObject

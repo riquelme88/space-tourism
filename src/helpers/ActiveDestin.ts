@@ -1,14 +1,14 @@
 type Planets = '' | ':moon' | ':mars' | ':europa' | ':titan'
 
-export const planet = (ActivePlanet : Planets) =>{
+export const planet = (ActivePlanet: Planets) => {
     let returnObject = {
-        ':moon' : false,
-        ':mars' : false,
+        ':moon': false,
+        ':mars': false,
         ':europa': false,
-        ':titan' : false,
+        ':titan': false,
     }
 
-    if(ActivePlanet != ''){
+    if (ActivePlanet != '') {
         returnObject[ActivePlanet] = true
     }
 

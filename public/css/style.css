@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
@@ -15,35 +15,35 @@ body{
     background-position: center;
 }
 
-.destination{
+.destination {
     background: url('/images/background-destination-desktop.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.crew{
+.crew {
     background: url('/images/background-crew-desktop.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.technology{
+.technology {
     background: url('/images/background-technology-desktop.jpg');
     background-size: cover;
     background-position: center;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
 }
 
-.logo{
+.logo {
     margin-left: 5vw;
     margin-top: 40px;
 }
 
-.line-header{
+.line-header {
     width: 37vw;
     height: 1px;
     background-color: #555;
@@ -53,11 +53,12 @@ header{
     opacity: 0.6;
 }
 
-.close{
+.close {
     display: none;
 }
-header nav{
-    background: linear-gradient(to right, #20242e,transparent,transparent,transparent,transparent);
+
+header nav {
+    background: linear-gradient(to right, #20242e, transparent, transparent, transparent, transparent);
     backdrop-filter: blur(5px);
     margin-left: -20px;
     padding: 2%;
@@ -68,19 +69,19 @@ header nav{
     align-items: center;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
     margin-left: 5%;
 }
 
-header nav ul li{
+header nav ul li {
     margin-left: 40px;
     padding: 34px 0px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -88,56 +89,56 @@ header nav ul li a{
     font-weight: 400;
 }
 
-a span{
+a span {
     margin-left: 5px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     opacity: 0.7;
 }
 
-.active{
+.active {
     border-bottom: 3px solid white;
     transition: all ease 0.5s;
 }
 
-main{
+main {
     display: flex;
     margin-top: 120px;
 }
 
-.info{
+.info {
     color: white;
     text-align: start;
     max-width: 370px;
     margin-left: 120px;
 }
 
-.subtitle{
+.subtitle {
     font-size: 25px;
     text-transform: uppercase;
 }
 
-.title{
+.title {
     font-size: 90px;
     text-transform: uppercase;
     letter-spacing: 18px;
     margin-top: 10px;
 }
 
-.text{
+.text {
     color: #bbb;
     line-height: 22px;
     margin-top: 25px;
 }
 
-.explore-sec{
+.explore-sec {
     margin-left: 400px;
     margin-top: 60px;
 
 }
 
-.explore{
+.explore {
     background-color: white;
     width: 200px;
     height: 200px;
@@ -154,49 +155,50 @@ main{
     transition: all ease 0.5s;
 }
 
-.explore:hover{
+.explore:hover {
     box-shadow: 0px 0px 0px 40px rgba(255, 255, 255, 0.1);
 }
 
-.info-planets{
+.info-planets {
     color: white;
     margin-left: 20vw;
     margin-top: -30px;
 }
 
-.images-planets img{
+.images-planets img {
     width: 22vw;
     margin-left: 100px;
     margin-top: -30px;
 }
 
 
-.select-planets ul{
+.select-planets ul {
     display: flex;
     list-style: none;
 }
 
-.select-planets ul li{
+.select-planets ul li {
     margin-right: 20px;
     padding: 3px 0px;
     cursor: pointer;
     transition: all ease 0.5s;
 }
-.select-planets ul li a{
+
+.select-planets ul li a {
     text-decoration: none;
     color: white;
 }
 
-.info-planets .infos{
-    margin-top: 20px;  
+.info-planets .infos {
+    margin-top: 20px;
 }
 
-.info-planets .infos h1{
+.info-planets .infos h1 {
     font-size: 50px;
     text-transform: uppercase;
 }
 
-.info-planets .infos p{
+.info-planets .infos p {
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 15px;
@@ -204,68 +206,75 @@ main{
     max-width: 48vw;
 }
 
-.stastisc{
+.stastisc {
     margin-top: 25px;
     display: flex;
 }
 
-.stastisc p{
+.stastisc p {
     text-transform: uppercase;
 }
 
-.stastisc .travel-info{
+.stastisc .travel-info {
     margin-left: 15vw;
 }
 
-.distance,.travel-time{
+.distance,
+.travel-time {
     font-size: 25px;
 }
 
-.avg-distance, .travel{
+.avg-distance,
+.travel {
     color: #bbb;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.pick-destin, .meet-crew,.space-launch{
+.pick-destin,
+.meet-crew,
+.space-launch {
     color: #666;
     margin-left: 30px;
     text-transform: uppercase;
 }
 
-.pick-destin span, .meet-crew span, .space-launch span{
+.pick-destin span,
+.meet-crew span,
+.space-launch span {
     color: white;
     margin-left: 10px;
 }
 
-.crew-info{
+.crew-info {
     margin-left: 30px;
     color: white;
 }
 
-.pattent{
+.pattent {
     text-transform: uppercase;
     font-size: 23px;
     letter-spacing: 2px;
 
 }
-.name{
+
+.name {
     text-transform: uppercase;
     font-size: 38px;
     margin-top: 10px;
 }
 
-.bio{
+.bio {
     max-width: 54vw;
     margin-top: 20px;
 }
 
-.points{
+.points {
     display: flex;
     margin-top: 100px;
 }
 
-.points a{
+.points a {
     width: 8px;
     height: 8px;
     background-color: #aaa;
@@ -274,21 +283,21 @@ main{
     cursor: pointer;
 }
 
-.activePoint{
+.activePoint {
     background-color: white !important
 }
 
-.crew-image img{
+.crew-image img {
     width: 270px;
     margin-top: -90px;
     margin-left: 80px;
 }
 
-.numbers{
+.numbers {
     margin-left: 7vw;
 }
 
-.number{
+.number {
     border: 1px solid #888;
     width: 40px;
     height: 40px;
@@ -303,40 +312,41 @@ main{
 }
 
 
-.active-number{
+.active-number {
     background-color: white;
     color: black;
 }
-.number a{
+
+.number a {
     text-decoration: none;
     color: white;
     padding: 10px;
 }
 
-.active-number a{
+.active-number a {
     color: black;
 }
 
-.info-launchers{
+.info-launchers {
     margin-left: 20vw;
     color: white;
 }
 
-.launcher-subtitle{
+.launcher-subtitle {
     text-transform: uppercase;
 }
 
-.launcher-title{
+.launcher-title {
     text-transform: uppercase;
     font-size: 40px;
     margin-top: 5px;
 }
 
-.description{
+.description {
     max-width: 29vw;
 }
 
-.launcher-image img{
+.launcher-image img {
     width: 30vw;
     height: 430px;
     margin-top: -130px;
@@ -346,117 +356,121 @@ main{
 
 
 @media screen and (min-width: 1920px) {
-    .info{
+    .info {
         max-width: 467px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 33px;
     }
-    .title{
-       font-size: 130px; 
+
+    .title {
+        font-size: 130px;
     }
 
-    .text{
+    .text {
         font-size: 20px;
         margin-top: 40px;
         line-height: 30px;
     }
-    .explore-sec{
+
+    .explore-sec {
         margin-left: 700px;
         margin-top: 160px;
     }
 
-    .explore{
+    .explore {
         width: 280px;
         height: 280px;
         font-size: 28px;
     }
 
-    .info-planets .infos p{
+    .info-planets .infos p {
         max-width: 49vw;
         font-size: 16px;
     }
 
-    .crew-info{
+    .crew-info {
         margin-left: 60px;
     }
 
-    .pattent{
+    .pattent {
         font-size: 26px;
     }
 
-    .name{
+    .name {
         font-size: 42px;
     }
 
-    .bio{
+    .bio {
         line-height: 25px;
         margin-top: 40px;
     }
 
-    .points{
+    .points {
         margin-top: 350px;
     }
 
-    .points a{
+    .points a {
         margin-right: 20px;
     }
 
-    .crew-image img{
+    .crew-image img {
         width: 400px;
         margin-top: 30px;
         margin-left: 250px;
     }
 
-    .number{
+    .number {
         margin-bottom: 25px;
         width: 45px;
         height: 45px;
     }
 
-    .description{
+    .description {
         margin-top: 15px;
         line-height: 25px;
     }
 
-    .launcher-image img{
+    .launcher-image img {
         height: inherit;
     }
 
 }
 
 @media screen and (min-width : 900px) and (max-width : 1024px) {
-    header nav{
+    header nav {
         margin-left: -50px;
         width: 82vw;
     }
 
-    .explore-sec{
+    .explore-sec {
         margin-left: 200px;
         margin-top: 160px;
     }
 }
 
 @media screen and (max-width : 768px) {
-    .line-header{
+    .line-header {
         width: 20vw;
         margin-left: 30px;
         margin-right: 70px;
     }
-    header nav{
+
+    header nav {
         margin-left: -100px;
         width: 70vw;
     }
 
-    header nav ul li{
+    header nav ul li {
         margin-left: 40px;
     }
 
-    header nav ul li a{
+    header nav ul li a {
         font-size: 12px;
     }
 
-    .info{
+    .info {
         margin-left: 80px;
     }
 
@@ -473,57 +487,62 @@ main{
         margin-top: 200px;
     }
 
-    .explore{
+    .explore {
         width: 180px;
         height: 180px;
         font-size: 22px;
     }
 
-    
+
     .info-planets .infos p {
         font-size: 12px;
         max-width: 44vw;
     }
-    
-    .avg-dstance, .travel{
+
+    .avg-dstance,
+    .travel {
         font-size: 13px;
     }
-    
+
     .stastisc .travel-info {
         margin-left: 12vw;
     }
-    
-    .distance, .travel-time {
+
+    .distance,
+    .travel-time {
         font-size: 22px;
     }
-    
-    .info-launchers{
+
+    .info-launchers {
         margin-left: 15vw;
     }
-    
-    .description{
+
+    .description {
         max-width: 38vw;
     }
-    .launcher-title{
+
+    .launcher-title {
         font-size: 30px;
     }
-    
-    .meet-crew, .space-launch, .pick-destin{
+
+    .meet-crew,
+    .space-launch,
+    .pick-destin {
         margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .line-header{
-       display: none;
+    .line-header {
+        display: none;
 
     }
 
-    .home{
+    .home {
         overflow: hidden;
     }
 
-    header nav{
+    header nav {
         width: 50vw;
         position: absolute;
         margin-top: 200px;
@@ -538,14 +557,14 @@ main{
         display: none;
     }
 
-    .close{
+    .close {
         display: block;
         right: 0;
         cursor: pointer;
         margin-right: 15%;
     }
 
-    .open{
+    .open {
         width: 32px;
         height: 0px;
         justify-content: center;
@@ -556,7 +575,7 @@ main{
         margin-right: 15px;
     }
 
-    .open .line{
+    .open .line {
         width: 30px;
         height: 5px;
         background-color: white;
@@ -564,59 +583,61 @@ main{
 
     }
 
-    
-    .close img{
+
+    .close img {
         width: 30px;
         margin-left: 100%;
     }
-    
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         margin-top: 30px;
         margin-right: 50%;
         width: 80%;
     }
-    
-    header nav ul li{
+
+    header nav ul li {
         padding: 0px 0px;
         margin-right: -24%;
         font-size: 14px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    .active{
+
+    .active {
         border: 0px;
         border-right: 3px solid white;
     }
-    nav ul li a span{
+
+    nav ul li a span {
         margin-left: 10px;
     }
 
-    main{
+    main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 80px;
     }
 
-    .info{
+    .info {
         margin-left: 0px;
         text-align: center;
         max-width: 98vw;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 14px;
         letter-spacing: 2px;
     }
-    .title{
+
+    .title {
         font-size: 90px;
         letter-spacing: 0px;
         margin-top: 40px;
     }
 
-    .text{
+    .text {
         font-size: 9px;
         line-height: 15px;
         margin-top: 10px;
@@ -633,11 +654,11 @@ main{
         font-size: 15px;
     }
 
-    .pick-destin{
+    .pick-destin {
         font-size: 16px;
     }
 
-    .images-planets img{
+    .images-planets img {
         width: 45vw;
         margin-left: 0px;
         margin-top: -30px;
@@ -648,7 +669,8 @@ main{
         margin-top: 30px;
         text-align: center;
     }
-    .select-planets ul{
+
+    .select-planets ul {
         margin-left: 50px;
     }
 
@@ -674,16 +696,16 @@ main{
         margin-top: 20px;
     }
 
-    .meet-crew{
+    .meet-crew {
         font-size: 16px;
         text-align: center;
     }
 
-    .crew-image{
+    .crew-image {
         position: absolute;
     }
 
-    .crew-image img{
+    .crew-image img {
         position: absolute;
         margin: 0px;
         width: 180px;
@@ -691,56 +713,57 @@ main{
         margin-top: -70px;
         margin-left: -80px;
     }
-    .points{
+
+    .points {
         margin-top: -150px;
         position: absolute;
         margin-left: 155px;
     }
 
-    .crew-info{
+    .crew-info {
         position: absolute;
         margin-top: 600px;
         text-align: center;
         margin-left: 0px;
     }
 
-    .pattent{
+    .pattent {
         font-size: 16px;
     }
 
-    .name{
+    .name {
         font-size: 25px;
     }
 
-    .bio{
+    .bio {
         max-width: 95vw;
         font-size: 12px;
     }
 
-    .launcher-image img{
+    .launcher-image img {
         width: 100vw;
         height: 230px;
         margin-top: -50px;
         position: absolute;
     }
 
-    .space-launch{
+    .space-launch {
         font-size: 18px;
         text-align: center;
     }
 
-    .numbers{
+    .numbers {
         position: absolute;
         margin-left: 0px;
         display: flex;
         margin-top: 440px;
     }
 
-    .number{
+    .number {
         margin-right: 20px;
     }
 
-    .info-launchers{
+    .info-launchers {
         margin-left: 0px;
         margin-top: 620px;
         position: absolute;
@@ -766,8 +789,3 @@ main{
 
 
 }
-
-
-
-
-
