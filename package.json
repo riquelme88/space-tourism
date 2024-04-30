@@ -7,9 +7,8 @@
         "node": "20.x"
     },
     "scripts": {
-        "tsc": "tsc",
+        "build": "tsc",
         "start": "node public/server.js",
-        "postinstall": "npm run tsc && copyfiles -u 1 src/**/*.mustache dist",
         "start-dev": "nodemon -e ts,json,mustache src/server.ts"
     },
     "dependencies": {
